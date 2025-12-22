@@ -1,0 +1,137 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: url("../img/fundoh.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header nav a.ativo {
+  text-decoration: underline;
+}
+
+
+main.login-box {
+  flex: 1;
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: rgba(255,255,255,0.95);
+  color: #000;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Labels e selects */
+main label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #444;
+}
+
+main select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+
+main p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+main input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+main label input[type="checkbox"] {
+  transform: scale(1.1);
+}
+
+
+#preco {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #a0522d;
+  text-align: center;
+}
+
+
+#btnFinalizarSimulador {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #a0522d;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+#btnFinalizarSimulador:hover {
+  background-color: #8b4513;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.6);
+  font-size: 0.9rem;
+  color: #fff;
+}

@@ -1,0 +1,172 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fundo-home{
+    background: url("../img/fundoh.jpg") no-repeat center center/cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+  background-color: rgba(0,0,0,0.7); 
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #ffdd99;
+}
+
+main {
+  flex: 1; 
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3c2f2f; 
+  font-size: 0.9rem;
+  color: #fff;
+}
+/* Banner */
+.banner {
+  background: url("../img/fundo.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 350px; 
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.35); 
+}
+
+.banner h1, .banner p {
+  position: relative;
+  z-index: 1;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+}
+
+/* Produtos */
+.produtos {
+  padding: 60px 40px;
+  background: #fff;
+  flex: 1;
+}
+
+.produtos h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #3c2f2f;
+  position: relative;
+}
+
+.produtos h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #a0522d;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Cards */
+.lista-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.produto {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.produto img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.produto p {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #3c2f2f;
+}
+
+.produto span {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #a0522d;
+  font-weight: bold;
+}
+
+.produto button {
+  background-color: #a0522d; 
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.produto button:hover {
+  background-color: #8b4513;
+}
+

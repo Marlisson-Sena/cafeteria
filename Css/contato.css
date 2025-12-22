@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.fundo-contato {
+  background: url("../img/contato.jpg") no-repeat center center/cover;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.7);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+main {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+
+.contato-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 1000px;
+  width: 100%;
+  background: rgba(0,0,0,0.85);
+  padding: 40px;
+  border-radius: 12px;
+}
+
+
+.contato-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.contato-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #f1c40f;
+  text-transform: uppercase;
+}
+
+.contato-info p {
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.contato-detalhe {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contato-detalhe span {
+  font-size: 1.8rem;
+  margin-right: 10px;
+  color: #f1c40f;
+}
+.contato-form {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contato-form h2 {
+  margin-bottom: 10px;
+  color: #f1c40f;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contato-form textarea {
+  resize: none;
+}
+
+.contato-form label {
+  font-size: 0.9rem;
+}
+
+.contato-form button {
+  background-color: #a0522d;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contato-form button:hover {
+  background-color: #8b4513;
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.6);
+  font-size: 0.9rem;
+  margin-top: auto;
+}

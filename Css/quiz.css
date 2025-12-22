@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: url("../img/fundoh.jpg") no-repeat center center/cover;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; 
+  background-color: rgba(0,0,0,0.7);
+  width: 100%; 
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap; 
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px; 
+  flex-wrap: nowrap;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  white-space: nowrap; 
+}
+
+header nav a:hover {
+  color: #a0522d;
+}
+
+header nav a.ativo {
+  color: #ffd700;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.quiz-container {
+  background-color: rgba(0,0,0,0.85);
+  padding: 35px 40px;
+  border-radius: 15px;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.7);
+  text-align: left;
+  display: flex;
+  flex-direction: column; 
+}
+
+.quiz-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #ffd700; 
+}
+
+.pergunta {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column; 
+}
+
+.pergunta label {
+  display: flex;        
+  align-items: center;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;          
+  box-sizing: border-box;   
+}
+
+.pergunta input {
+  margin-right: 10px;
+}
+
+.pergunta label:hover {
+  background: #a0522d;
+  color: #fff;
+}
+
+#finalizar {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #a0522d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 20px;
+}
+
+#finalizar {
+  display: block;
+  width: 100%;       
+  max-width: 250px;  
+  margin: 25px auto; 
+}
+
+#resultado {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+#resultado.correto {
+  color: #32cd32; 
+}
+
+#resultado.errado {
+  color: #ff4d4d; 
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(0,0,0,0.7);
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
