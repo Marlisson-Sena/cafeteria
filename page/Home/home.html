@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Cafeteira</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="fundo-home">
+  <header>
+    <div class="logo">☕ Cafeteira</div>
+    <nav>
+             <ul>
+        <li><a href="#home.html">Home</a></li>
+        <li><a href="../../page/produtos/produtos.html">Produtos</a></li>
+        
+                <li><a href="../../page/quiz/quiz.html">Quiz</a></li>
+        <li><a href="../../page/simulador/simulador.html">Simulador</a></li>
+        <li><a href="../../page/contato/contato.html">Contato</a></li>
+        <li><a href="../../page/sobre/sobre.html">Sobre</a></li>
+        <li><a href="../../index.html">Sair</a></li>
+      </ul>
+
+
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="banner">
+      <h1>Bem-vindo à Cafeteira</h1>
+      <p>Os melhores cafés direto das melhores plantações.</p>
+      <a href="../../page/produtos/produtos.html" class="btn">Conheça nossos produtos</a>
+    </section>
+
+    
+    <section class="produtos">
+      <h2>Mais vendidos da semana</h2>
+      <div class="lista-produtos">
+        
+        <div class="produto">
+          <img src="../../img/coffe1.jpg" alt="Café 1">
+          <p>Coffee Moka</p>
+          <span>R$ 23,00</span>
+          <button onclick="comprar(
+            'Coffee Moka',
+            23,
+            'Um café encorpado e intenso, ideal para quem gosta de sabor marcante.',
+            'Grãos selecionados 100% arábica',
+            'Prepare no coador ou cafeteira italiana.',
+            '../../img/coffe1.jpg'
+          )">Comprar</button>
+        </div>
+        <div class="produto">
+  <img src="../../img/coffe3.jpg" alt="Café 2">
+  <p>Coffee Latte</p>
+  <span>R$ 25,00</span>
+  <button onclick="comprar(
+    'Coffee Latte',
+    25,
+    'Um café cremoso com leite, ideal para quem gosta de sabor suave.',
+    'Leite fresco e café arábica selecionado',
+    'Prepare no vaporizador ou cafeteira italiana.',
+    '../../img/coffe3.jpg'
+  )">Comprar</button>
+</div>
+
+<div class="produto">
+  <img src="../../img/coffe2.jpg" alt="Café 3">
+  <p>Coffee Espresso</p>
+  <span>R$ 20,00</span>
+  <button onclick="comprar(
+    'Coffee Espresso',
+    20,
+    'Café intenso e aromático, perfeito para quem gosta de um espresso clássico.',
+    'Grãos 100% arábica torrados na medida certa',
+    'Prepare na máquina de espresso ou cafeteira italiana.',
+    '../../img/coffe2.jpg'
+  )">Comprar</button>
+</div>
+
+ 
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cafeteira - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function comprar(nome, preco, descricao, ingredientes, preparo, imagem) {
+      localStorage.setItem('produtoSelecionado', JSON.stringify({
+        nome, preco, descricao, ingredientes, preparo, imagem
+      }));
+      window.location.href = '../../page/compra/compra.html';
+    }
+  </script>
+</body>
+</html>
