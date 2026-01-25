@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - Cafeteira</title>
+  <link rel="stylesheet" href="../../css/produtos.css">
+</head>
+<body class="">
+  <header>
+    <div class="logo">☕ Cafeteira</div>
+    <nav>
+              <ul>
+        <li><a href="../../page/home/home.html">Home</a></li>
+        <li><a href="#produtos.html">Produtos</a></li>
+        
+        <li><a href="../../page/quiz/quiz.html">Quiz</a></li>
+        <li><a href="../../page/simulador/simulador.html">Simulador</a></li>
+        <li><a href="../../page/contato/contato.html">Contato</a></li>
+        <li><a href="../../page/sobre/sobre.html">Sobre</a></li>
+        <li><a href="../../index.html">Sair</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <section class="banner"></section>
+    </section>
+    <section class="produtos">
+      <h2>Catálogo completo</h2>
+      <div class="lista-produtos">
+        
+        <div class="produto">
+          <img src="../../img/coffe1.jpg" alt="Coffee Moka">
+          <p>Coffee Moka</p>
+          <span>R$ 23,00</span>
+          <button onclick="comprar(
+            'Coffee Moka',
+            23,
+            'Um café encorpado e intenso, ideal para quem gosta de sabor marcante.',
+            'Grãos selecionados 100% arábica',
+            'Prepare no coador ou cafeteira italiana.',
+            '../../img/coffe1.jpg'
+          )">Comprar</button>
+        </div>
+
+        <div class="produto">
+          <img src="../../img/coffe3.jpg" alt="Coffee Latte">
+          <p>Coffee Latte</p>
+          <span>R$ 25,00</span>
+          <button onclick="comprar(
+            'Coffee Latte',
+            25,
+            'Um café cremoso com leite, ideal para quem gosta de sabor suave.',
+            'Leite fresco e café arábica selecionado',
+            'Prepare no vaporizador ou cafeteira italiana.',
+            '../../img/coffe3.jpg'
+          )">Comprar</button>
+        </div>
+
+        <div class="produto">
+          <img src="../../img/coffe2.jpg" alt="Coffee Espresso">
+          <p>Coffee Espresso</p>
+          <span>R$ 20,00</span>
+          <button onclick="comprar(
+            'Coffee Espresso',
+            20,
+            'Café intenso e aromático, perfeito para quem gosta de um espresso clássico.',
+            'Grãos 100% arábica torrados na medida certa',
+            'Prepare na máquina de espresso ou cafeteira italiana.',
+            '../../img/coffe2.jpg'
+          )">Comprar</button>
+        </div>
+        
+        <div class="produto">
+          <img src="../../img/p4.jpg" alt="Cappuccino">
+          <p>Cappuccino</p>
+          <span>R$ 26,00</span>
+          <button onclick="comprar(
+            'Cappuccino',
+            26,
+            'Café espresso com leite vaporizado e espuma cremosa.',
+            'Café arábica e leite fresco',
+            'Prepare na máquina de espresso ou com vaporizador de leite.',
+            '../../img/p4.jpg'
+          )">Comprar</button>
+        </div>
+
+        
+        <div class="produto">
+          <img src="../../img/p5.jpg" alt="Macchiato">
+          <p>Macchiato</p>
+          <span>R$ 22,00</span>
+          <button onclick="comprar(
+            'Macchiato',
+            22,
+            'Espresso forte com um toque de espuma de leite no topo.',
+            'Grãos arábica selecionados',
+            'Ideal para quem gosta de espresso com leve suavidade.',
+            '../../img/p5.jpg'
+          )">Comprar</button>
+        </div>
+
+        
+        <div class="produto">
+          <img src="../../img/p6.jpg" alt="Mocha">
+          <p>Mocha</p>
+          <span>R$ 28,00</span>
+          <button onclick="comprar(
+            'Mocha',
+            28,
+            'Combinação deliciosa de café espresso, leite vaporizado e chocolate.',
+            'Café arábica, leite fresco e chocolate de qualidade',
+            'Prepare em camadas para destacar os sabores.',
+            '../../img/p6.jpg'
+          )">Comprar</button>
+        </div>
+
+        
+        <div class="produto">
+          <img src="../../img/p7.jpg" alt="Flat White">
+          <p>Flat White</p>
+          <span>R$ 27,00</span>
+          <button onclick="comprar(
+            'Flat White',
+            27,
+            'Espresso suave coberto com leite vaporizado e microespuma.',
+            'Grãos arábica e leite fresco vaporizado',
+            'Prepare em xícara pequena para realçar o sabor.',
+            '../../img/p7.jpg'
+          )">Comprar</button>
+        </div>
+
+        
+        <div class="produto">
+          <img src="../../img/p8.jpeg" alt="Irish Coffee">
+          <p>Irish Coffee</p>
+          <span>R$ 35,00</span>
+          <button onclick="comprar(
+            'Irish Coffee',
+            35,
+            'Café espresso com uísque irlandês, açúcar e creme.',
+            'Café forte e uísque de qualidade',
+            'Ideal para ocasiões especiais.',
+            '../../img/p8.jpeg'
+          )">Comprar</button>
+        </div>
+        
+
+       
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cafeteira - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function comprar(nome, preco, descricao, ingredientes, preparo, imagem) {
+      localStorage.setItem('produtoSelecionado', JSON.stringify({
+        nome, preco, descricao, ingredientes, preparo, imagem
+      }));
+      window.location.href = '../../page/compra/compra.html';
+    }
+  </script>
+</body>
+</html>
