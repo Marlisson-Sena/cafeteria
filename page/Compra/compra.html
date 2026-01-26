@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Compra</title>
+  <link rel="stylesheet" href="../../css/compra.css">
+</head>
+<body>
+    <header>
+        <div class="logo">☕ Cafeteira</div>
+            <nav>
+      <ul>
+        <li><a href="../../page/home/home.html">Home</a></li>
+        <li><a href="../../page/produtos/produtos.html">Produtos</a></li>
+        
+                <li><a href="../../page/quiz/quiz.html">Quiz</a></li>
+        <li><a href="../../page/simulador/simulador.html">Simulador</a></li>
+        <li><a href="../../page/contato/contato.html">Contato</a></li>
+        <li><a href="../../page/sobre/sobre.html">Sobre</a></li>
+        <li><a href="../../index.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+  <h1 class="titulo">Finalizar Compra</h1>
+
+  <div class="checkout-container">
+    
+    
+    <div class="produto-info">
+      <div class="produto-card" id="produto-selecionado">
+        
+      </div>
+    </div>
+
+    
+    <div class="formulario">
+     
+      <div class="endereco">
+        <h2>Endereço de Entrega</h2>
+        <input type="text" id="rua" placeholder="Rua e número">
+        <input type="text" id="bairro" placeholder="Bairro">
+        <input type="text" id="cidade" placeholder="Cidade">
+        <input type="text" id="cep" placeholder="CEP">
+      </div>
+
+     
+      <div class="pagamento">
+        <h2>Escolha a forma de pagamento</h2>
+        <label><input type="radio" name="pagamento" value="Pix"> Pix</label>
+        <label><input type="radio" name="pagamento" value="Débito"> Débito</label>
+        <label><input type="radio" name="pagamento" value="Crédito"> Crédito</label>
+      </div>
+
+      <button id="finalizar">Finalizar Compra</button>
+    </div>
+    
+  </div>
+</main>
+
+
+
+  <footer>
+    <p>&copy; 2025 Cafeteira - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../../js/compra.js"></script>
+</body>
+</html>
