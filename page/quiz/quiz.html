@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Café</title>
+  <link rel="stylesheet" href="../../css/quiz.css"> 
+</head>
+<body>
+  <header>
+    <div class="logo">☕ Cafeteira</div>
+    <nav>
+      <ul>
+              <li><a href="../../page/home/home.html">Home</a></li>
+        <li><a href="../../page/produtos/produtos.html">Produtos</a></li>
+        <li><a href="#quiz.html" class="ativo">Quiz</a></li>
+        <li><a href="../../page/simulador/simulador.html">Simulador</a></li>
+        <li><a href="../../page/contato/contato.html">Contato</a></li>
+        <li><a href="../../page/sobre/sobre.html">Sobre</a></li>
+        <li><a href="../../index.html">Sair</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  <div class="quiz-container">
+    <h1>Quiz sobre Café</h1>
+
+    
+    <div class="pergunta">
+      <p>1. Qual país é considerado o maior produtor de café do mundo?</p>
+      <label><input type="radio" name="q1" value="colombia"> Colômbia</label>
+      <label><input type="radio" name="q1" value="brasil"> Brasil</label>
+      <label><input type="radio" name="q1" value="etiopia"> Etiópia</label>
+      <label><input type="radio" name="q1" value="vietna"> Vietnã</label>
+    </div>
+
+    
+    <div class="pergunta">
+      <p>2. Qual é o tipo de café mais consumido no Brasil?</p>
+      <label><input type="radio" name="q2" value="arabica"> Arábica</label>
+      <label><input type="radio" name="q2" value="robusta"> Robusta</label>
+      <label><input type="radio" name="q2" value="conilon"> Conilon</label>
+      <label><input type="radio" name="q2" value="expresso"> Expresso</label>
+    </div>
+
+    
+    <div class="pergunta">
+      <p>3. O que é um Cappuccino?</p>
+      <label><input type="radio" name="q3" value="forte"> Café preto forte</label>
+      <label><input type="radio" name="q3" value="mistura"> Mistura de café, leite vaporizado e espuma de leite</label>
+      <label><input type="radio" name="q3" value="canela"> Café com canela</label>
+      <label><input type="radio" name="q3" value="chocolate"> Café com chocolate</label>
+    </div>
+
+    
+    <button id="finalizar">Finalizar Quiz</button>
+
+    
+    <div id="resultado"></div>
+  </div>
+</main>
+
+
+
+  <footer>
+    <p>&copy; 2025 Cafeteira - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../../js/quiz.js"></script>
+</body>
+</html>
