@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Café - Cafeteria</title>
+  <link rel="stylesheet" href="../../css/simulador.css">
+</head>
+<body>
+
+  <header>
+        <div class="logo">☕ Cafeteira</div>
+        <nav>
+                  <ul>
+        <li><a href="../../page/home/home.html">Home</a></li>
+        <li><a href="../../page/produtos/produtos.html">Produtos</a></li>
+        
+                <li><a href="../../page/quiz/quiz.html">Quiz</a></li>
+        <li><a href="#simulador.html">Simulador</a></li>
+        <li><a href="../../page/contato/contato.html">Contato</a></li>
+        <li><a href="../../page/sobre/sobre.html">Sobre</a></li>
+        <li><a href="../../index.html">Sair</a></li>
+      </ul>
+  
+    </nav>
+    </header>
+  <main class="login-box">
+    <h2>Monte seu café do seu jeito</h2>
+
+    <label for="cafe">Escolha o tipo de café:</label>
+    <select id="cafe">
+      <option value="20">Espresso - R$20</option>
+      <option value="23">Moka - R$23</option>
+      <option value="25">Latte - R$25</option>
+      <option value="26">Cappuccino - R$26</option>
+      <option value="28">Mocha - R$28</option>
+    </select>
+
+    <label for="tamanho">Tamanho:</label>
+    <select id="tamanho">
+      <option value="0">Pequeno (150ml)</option>
+      <option value="3">Médio (250ml) + R$3</option>
+      <option value="5">Grande (350ml) + R$5</option>
+    </select>
+
+    <p>Extras:</p>
+    <label><input type="checkbox" value="2"> Chantilly (+R$2)</label><br>
+    <label><input type="checkbox" value="3"> Chocolate (+R$3)</label><br>
+    <label><input type="checkbox" value="2"> Canela (+R$2)</label><br>
+    <label><input type="checkbox" value="4"> Leite Vegetal (+R$4)</label><br>
+
+    <h3 id="preco">Total: R$0,00</h3>
+    <button id="btnFinalizarSimulador">Comprar Café</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cafeteria - Todos os direitos reservados</p>
+  </footer>
+
+  
+  <script src="../../js/simulador.js"></script>
+</body>
+</html>
