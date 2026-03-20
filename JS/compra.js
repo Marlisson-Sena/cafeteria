@@ -62,5 +62,5 @@ document.getElementById('finalizar').addEventListener('click', () => {
   alert(`✅ Compra finalizada!\n\nProduto: ${produto.nome}\nQuantidade: ${produto.quantidade}\nTotal: R$ ${total}\nPagamento: ${metodo.value}\nEndereço: ${rua}, ${bairro}, ${cidade} - CEP ${cep}`);
 
   localStorage.removeItem('produtoSelecionado');
-  window.location.href = '../../page/home/home.html';
+  window.location.href = '../../page/Home/home.html';
 });
