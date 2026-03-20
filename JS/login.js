@@ -3,7 +3,7 @@ function login() {
   const senha = document.getElementById("senha").value;
 
   if (usuario === "usuario" && senha === "123") {
-    window.location.href = "page/home/home.html";
+    window.location.href = "page/Home/home.html";
   } else {
     alert("Usuário ou senha inválidos");
   }
