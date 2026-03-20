@@ -1,10 +1,19 @@
- ## HTML-Cafeteria-on-line
-*Site de cafeteria desenvolvido para prática de front-end.*
+ # Projeto Cafeteria
 
-## Sobre o projeto
-Projeto de um site de cafeteria com foco em layout, responsividade e organização de código.
+Site desenvolvido com HTML, CSS e JavaScript.
 
-## Tecnologias utilizadas
+## Status
+Projeto em desenvolvimento para prática de front-end.
+
+## Funcionalidades
+- Tela de login
+- Navegação entre páginas
+- Layout básico responsivo
+
+## Tecnologias
 - HTML
 - CSS
 - JavaScript
+
+## Objetivo
+Aprimorar conhecimentos em desenvolvimento web e evoluir para integração com banco de dados futuramente.
