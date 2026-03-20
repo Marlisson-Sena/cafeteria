@@ -57,7 +57,7 @@ btnFinalizar.addEventListener("click", () => {
 
   
   localStorage.setItem("produtoSelecionado", JSON.stringify(produtoSelecionado));
-  window.location.href = "../../page/compra/compra.html";
+  window.location.href = "../../page/Compra/compra.html";
 });
 
 
