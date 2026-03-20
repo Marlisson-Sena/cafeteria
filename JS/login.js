@@ -3,8 +3,14 @@ function login() {
   const senha = document.getElementById("senha").value;
 
   if (usuario === "usuario" && senha === "123") {
-    window.location.href = "page/Home/home.html";
+    window.location.href = "page/home/home.html";
   } else {
     alert("Usuário ou senha inválidos");
   }
 }
+
+const container = document.querySelector(".container");
+
+setTimeout(() => {
+  container.classList.add("active");
+}, 3500);
